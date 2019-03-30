@@ -1,0 +1,381 @@
+/* =================================================================== */
+/* 
+/*  Puremedia v1.0 Media Queries
+/*  url:styleshout.com
+/*  10-10-2014
+/*
+/* =================================================================== */
+
+
+
+/* tablets */
+@media only screen and (max-width:768px) {
+
+   /* header styles */
+	header {	background: #EBEBEB;	}
+	header {	height: 72px; }
+	header .logo {	margin: 14px 0 24px 15px; }
+	header .logo a { margin-right: 0; }
+	
+	/* mobile navigation */
+	#nav-wrap {
+		z-index: 991;
+		display: block;
+		margin-top: 0;
+		width: 100%;
+		float: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	#nav-wrap > a {
+		border: none;
+		height: 60px;
+		min-width: 60px;
+		font-size: 12px;
+		text-align: left;
+		float: right;
+		padding: 0;
+		position: relative;
+	}
+	#nav-wrap .menu-text {
+		text-transform: uppercase;
+		margin-right: 60px;
+		padding-left: 20px;
+		vertical-align: middle;
+		line-height: 60px;
+		display: none;
+	}
+	#nav-wrap .menu-icon {
+		display: inline-block;
+		width: 20px;
+		height: 3px;
+		margin-top: -3px;
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		bottom: auto;
+		left: auto;
+		background: #E60000;
+	}
+	#nav-wrap .menu-icon:before, 
+	#nav-wrap .menu-icon:after {
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-color: inherit;
+		left: 0;
+	}
+	#nav-wrap .menu-icon:before {
+		bottom: 6px;
+	}
+	#nav-wrap .menu-icon:after {
+		top: 6px;
+	}
+	#nav-wrap ul#nav {
+		background-color: lightgray;
+		padding: 54px 45px 60px 45px;
+		margin: 0;
+		height: auto;
+		display: none;
+		clear: both;
+		width: 100%;
+		float: none;
+		position: relative;
+		top: 0;
+		right: 0;
+	}
+	#nav-wrap ul#nav > li {
+		display: block;
+		float: none;
+		height: auto;
+		text-align: left;
+		border-bottom: 1px solid #3b4558;
+		padding: 6px 0;
+	}
+	#nav-wrap ul#nav > li:first-child {
+		border-top: 1px solid #3b4558;
+	}
+	#nav-wrap ul#nav li a {
+		display: block;
+		width: auto;
+		padding: 0;
+		padding: 12px 0;
+		line-height: 16px;
+		border: none;
+	}
+	#nav-wrap ul#nav li a:hover {
+		color: white;
+	}
+	.js #nav-wrap a.mobile-btn {
+		display: none;
+	}
+	.js #nav-wrap a#toggle-btn {
+		display: block;
+	}
+	.no-js #nav-wrap:not(:target) > a:first-of-type, 
+	.no-js #nav-wrap:target > a:last-of-type {
+		display: block;
+	}
+	.no-js #nav-wrap:target ul#nav {
+		display: block;
+	}
+
+	/* content styles */
+	#content { padding-top: 54px;	} 
+	#content #sidebar {
+		margin-top: 42px;
+		padding-left: 0;
+	}
+
+	
+	
+} /* 768 */
+
+
+/* mobiles */
+
+/* small small mobiles */
+@media only screen and (max-width:480px) {
+
+	/* hero section */
+	#hero-slider {
+		width: 94%;
+		margin: 54px auto 24px;
+	}
+	#hero-slider .flex-caption { margin: 0; }
+	#hero-slider .flex-caption h1 {
+		font: 36px/1.3 "raleway-semibold", sans-serif;
+	}
+	/* about section */
+	#team-wrapper .member-pic {
+		width: 60px;
+		height: 60px;	
+		margin-top: -30px;			
+	}
+	#team-wrapper .member-name { margin-left: 60px;	}
+	#team-wrapper .member-name h3 {
+		font-size: 15px;
+		line-height: 18px;	
+		margin-bottom: 12px;	
+	}
+
+} /* 480 */
+
+
+
+
+@media only screen and (max-width:420px) {
+
+	/* page-title */
+	#page-title h1 {
+		font: 38px/1.3 "raleway-bold", sans-serif;
+	}
+
+	/* portfolio section */
+	.item .item-wrap .portfolio-item-meta {
+		margin-right: 15px;
+	}
+	.item .item-wrap .portfolio-item-meta h5 {
+		font: 13px/18px "raleway-heavy", sans-serif;
+	}
+	.item .item-wrap .portfolio-item-meta p {
+		font: 12px/18px "raleway-semibold", sans-serif;
+	}
+
+} /* 420 */
+
+
+
+@media only screen and (min-width: 768px) {
+	#nav-wrap ul#nav {
+		display: block !important;
+	}
+}
+/***************************************************************************************/
+
+/* ============ Slider =============*/
+@media only screen and (max-width: 700px) {
+	.mySlides {
+		height: 350px;
+	}
+}
+@media only screen and (max-width: 570px) {
+	.mySlides {
+		height: 280px;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.mySlides {
+		height: 195px;
+	}
+	.prev , .next {
+		font-size: 12px;
+		padding: 11px
+	}
+	.myslider-paddin {
+		padding: 0 10px;
+	}
+}
+@media only screen and (max-width: 266px) {
+	.mySlides {
+		height: 150px
+	}
+}
+@media only screen and (max-width: 160px) {
+	.mySlides {
+		height: 100px;
+	}
+	.prev , .next {
+	    font-size: 8px;
+    	padding: 7px;
+	}
+}
+/* ============ Slider =============*/
+/* ========================================================== */
+
+/* ============= Services =================== */
+
+@media only screen and (max-width: 1004px) {
+	.services-content{
+    	width: 350px;
+	}
+	.services-content p{
+		font-size: 15px
+	}
+	.services-img{
+		width: 370px;
+	}
+}
+@media only screen and (max-width: 838px) {
+	.services-content{
+		width: 300px;
+	}
+	.services-content p{
+		font-size: 13px;
+	}
+	.services-img{
+		width: 335px;
+	}
+}
+@media only screen and (max-width: 752px) {
+	.services-content{
+		width: 100%;
+		float: none
+	}
+	.services-content p{
+		font-size: 15px;
+	}
+	.services-img{
+		width: 100%;
+		height: auto;
+		float: none;
+	}
+	.services-content-2{
+		display: none
+	}
+	.hidden-content{
+		display: block;
+	}
+}
+@media only screen and (max-width: 525px) {
+	.services-content p{
+    	font-size: 13px;
+	}
+	.services-content{
+		margin-top: 21px;
+	}
+}
+@media only screen and (max-width: 285px) {
+	.services-content h2 {
+		margin-bottom: 0px;
+		font-size: 19px;
+	}
+	.services-content p{
+    	font-size: 13px;
+	}
+	.services-content{
+		padding: 7px 10px;
+	}
+	.myslider-paddin {
+    	padding: 0px 1px;
+	}
+}
+@media only screen and (max-width: 170px) {
+	.services-content h2 {
+    margin-bottom: 0px;
+    font-size: 8px;
+	}
+	.services-content p{
+		font-size: 7px;
+	}
+	.services-content{
+		padding: 5px 10px;
+		word-break: break-all;
+		margin-top: 12px;
+	}
+}
+
+/* ============= Services =================== */
+
+
+
+/* navBar */
+@media only screen and (max-width: 699px) {
+	.icons-container {
+		width: 300px;
+	}
+	#toTop {
+		bottom: 110px;
+    	font-size: 15px;
+	}
+}
+@media only screen and (max-width: 321px) {
+	#toTop {
+		bottom: 20px;
+		font-size: 15px;
+		left: 10px;
+		right: inherit;
+	}
+	.icons-container1 {
+		padding: 1px;
+		float: left;
+		width: 200px;
+	}
+	.icons-container2 .fa, .icons-container1 .fa {
+		padding: 5px 2px 5px 1px;
+		width: 20px;
+		font-size: 15px;
+	}
+	.icons-container p {
+		margin: auto;
+		padding-top: 7px;
+		padding-left: 5px;
+		font-size: 12px;
+	}
+	.icons-container1 div {
+		width: 150px;
+	}
+	.icons-container2 {
+		padding: 1px;
+		float: right;
+		margin-right: 150px;
+	}
+	.paddin {
+		padding: 1px;
+	}
+	.log {
+		padding: 5px;
+		font-size: 12px;
+	}
+}
+@media only screen and (max-width: 150px) {
+	.icons-container {
+    	width: 280px;
+	}
+	.icons-container2 {
+    	margin-right: 150px;
+	}
+}
+
